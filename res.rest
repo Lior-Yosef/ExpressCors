@@ -1,0 +1,38 @@
+GET http://localhost:3003
+###
+
+
+GET http://localhost:3003/movies
+###
+
+
+GET http://localhost:3003/movies/2
+###
+
+
+POST http://localhost:3003/movies
+Content-Type: application/json
+
+{
+    "movie":
+    {
+        "id":5,
+        "name":"some-movie",
+        "year":2021,
+        "rating":10
+    }
+}
+
+###
+PUT http://localhost:3003/movies/1
+
+Content-Type: application/json
+{
+    "year":2020,
+    "rating":5
+}
+###
+
+###
+
+DELETE http://localhost:3003/movies/1
